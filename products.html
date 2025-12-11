@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Rajratan Group</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Canonical Link -->
+<link rel="canonical" href="https://rajratan.in/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<!-- Search Engine Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- Author -->
+<meta name="author" content="Rajratan Group">
+
+<!-- Products Page SEO -->
+<title>Eco-Friendly Green Products & Recycling Solutions | Rajratan Group</title>
+
+<meta name="description" content="Browse Rajratan Group’s sustainable products including pallets, PVC alternatives, urban green infrastructure, and recycled-material solutions.">
+
+<meta name="keywords" content="green products India, recycled products, eco-friendly manufacturing, pallets, PVC alternatives, waste-based products, Rajratan products">
+
+<meta property="og:title" content="Eco-Friendly Green Products | Rajratan Group">
+<meta property="og:description" content="Explore innovative recycled products and sustainable manufacturing solutions from Rajratan Group.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rajratan.in/products">
+<meta property="og:image" content="https://rajratan.in/assets/products-og.jpg">
+
+
+
+<style>
+:root {
+    --navy: #0a0f2d;
+    --white: #ffffff;
+    --gold: #f7c873;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+body { background: var(--navy); color: var(--white); }
+
+/* HEADER */
+header {
+    width: 100%; padding: 20px 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--navy); position: sticky; top: 0; z-index: 100;
+     border-bottom:1px solid #f7c873;
+}
+header img { height: 50px; }
+header .btn {
+    padding: 10px 20px;
+    background: transparent; color: var(--gold);
+    border: 2px solid var(--gold); border-radius: 6px;
+    cursor: pointer; transition: .3s;
+}
+header .btn:hover { background: var(--gold); color: var(--navy); }
+
+.footer {
+    background: var(--white);
+    padding: 60px 10%;
+    color: var(--white);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 150px;
+}
+
+.footer h3 {
+    color: var(--gold);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    font-size: 15px;
+    color: var(--navy);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 26px;
+     transition: 0.3s ease;
+    filter: brightness(0) saturate(100%) 
+            invert(8%) sepia(20%) saturate(2300%) 
+            hue-rotate(215deg) brightness(90%) contrast(95%);
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+     filter: brightness(0) saturate(100%) 
+            invert(75%) sepia(45%) saturate(550%) 
+            hue-rotate(358deg) brightness(100%) contrast(95%);
+}
+
+/* Fade Animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease-out;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    header { padding: 15px 20px; }
+    .about-hero h1 { font-size: 32px; }
+    .about-section { padding: 60px 20px; }
+    .footer-content { text-align: center; }
+}
+
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .logos img {
+        width: 80%;
+        height: auto;
+    }
+
+    .testimonials {
+        padding: 60px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        padding: 12px 18px;
+    }
+
+    header img {
+        height: 35px;
+    }
+}
+
+/* NAVIGATION */
+header .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header .nav-links a:hover {
+    color: var(--gold);
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background: var(--navy);
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 25px;
+        transition: 0.4s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+        color: var(--gold);
+    }
+
+    header .btn {
+        width: 150px;
+        text-align: center;
+    }
+ 
+
+}
+
+   /* Close (X) button inside mobile menu */
+.close-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: var(--gold);
+    cursor: pointer;
+    display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+    .close-nav {
+        display: block;
+    }
+}
+
+#active{
+    color: #f7c873;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
+
+    .footer p, .footer a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 8%;
+    }
+
+    .footer-logo {
+        height: 60px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p, .footer a {
+        font-size: 13px;
+    }
+
+    .footer-social img {
+        width: 22px;
+    }
+}
+
+/* PRODUCT HERO */
+.product-hero {
+    height: 260px;
+    background: url('images/products-banner.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-hero h1 {
+    color: var(--gold);
+    font-size: 48px;
+}
+
+/* PRODUCT SECTION */
+.products-section {
+    padding: 70px 12%;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-tabs .tab-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+/* PAC BADGE */
+.pac-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #2ea8ff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* PAC SECTION */
+.pac-info {
+    padding: 70px 12%;
+    background: rgba(255,255,255,0.06);
+    margin-top: 80px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.pac-info h2 {
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.pac-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.pac-tagline {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+  /* Transparent fullscreen overlay */
+#chat-wave-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  pointer-events: none;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* Expanding golden wave */
+.wave-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.65s ease-out, height 0.65s ease-out;
+  opacity: 1;
+  background: radial-gradient(circle,
+    #ffe29f 0%,
+    #f7c873 35%,
+    #d7a645 70%,
+    #b8860b 100%
+  );
+  box-shadow: 0 0 40px rgba(247, 200, 115, 0.8),
+              0 0 80px rgba(184, 134, 11, 0.6);
+}
+
+
+/* Floating Chat Icon */
+#chat-launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #f7c873;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.2s ease-in-out;
+}
+
+#chat-launcher:hover {
+  transform: scale(1.1);
+}
+
+:root {
+  --navy: #071833;
+  --gold: #f7c873;
+}
+
+/* HERO */
+.hero-product {
+  height: 480px;
+  background: url('C:/Users/Vivek/rajaratan industries/public/images/pro-hero.png') no-repeat right center;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 350px;
+  line-height: 1.2;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  display: inline-block;
+  background: var(--gold);
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  transition: .2s ease-in-out;
+}
+.cta-btn:hover { transform: translateY(-3px); }
+
+.products-section {
+  padding: 80px 120px;
+  background: var(--navy);
+}
+
+.product-tabs {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-tabs button {
+  background: #eee;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.product-tabs button.active {
+  background: #0a0f2d;
+  color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.product-card {
+  border-radius: 10px;
+  padding: 15px;
+  transition: .25s ease;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #0a0f2d;
+  margin: 10px 0;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.copy-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: #f7c873;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 1024px) {
+  .products-section {
+    padding: 60px 40px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-product {
+    height: 340px;
+    background-position: center;
+    padding-left: 20px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+    max-width: 250px;
+  }
+  .product-tabs button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .product-card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 12px 18px;
+  }
+  .hero-product {
+    height: 280px;
+  }
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .products-section {
+    padding: 40px 20px;
+  }
+  .product-tabs {
+    gap: 8px;
+  }
+  .product-tabs button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
+  }
+  .product-card {
+    padding: 12px;
+  }
+  .product-card img {
+    height: 200px;
+  }
+}
+
+.pac-section {
+    width: 100%;
+    background: var(--white);
+    color: var(--navy);
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pac-image img {
+    width: 100%;
+    max-width: 750px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(247, 200, 115, 0.4);
+    margin-bottom: 40px;
+}
+
+.pac-content {
+    max-width: 900px;
+    background-color: white;
+    color: var(--navy);
+}
+
+.pac-content h2 {
+    text-align: center;
+    color: var(--gold);
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+.pac-content p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+/* 🔹 Tablet */
+@media (max-width: 992px) {
+    .pac-section {
+        padding: 70px 6%;
+    }
+    .pac-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* 🔹 Mobile */
+@media (max-width: 768px) {
+    .pac-section {
+        padding: 55px 20px;
+    }
+    .pac-content h2 {
+        font-size: 1.6rem;
+    }
+    .pac-content p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+}
+
+/* 🔹 Small Mobile */
+@media (max-width: 480px) {
+    .pac-content h2 {
+        font-size: 1.4rem;
+    }
+    .pac-content p {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+}
+
+.pac-info-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #0a0f2d 0%, #0d1747 100%);
+    padding: 35px 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+.pac-info-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #f7c873;
+}
+
+.pac-info-section p {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.sample-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    background-color: #f7c873;
+    color: #0a0f2d;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.sample-btn:hover {
+    background-color: #cfa052;
+    transform: translateY(-2px);
+}
+
+/* ======================================================
+   GLOBAL SECTION FADE-IN
+====================================================== */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.9s ease-out;
+}
+section.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* ======================================================
+   HERO PRODUCT ANIMATION (Fade + Lift + Parallax)
+====================================================== */
+.hero-product {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: heroFadeIn 1.3s ease-out forwards;
+    background-attachment: fixed;
+}
+
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+    animation: textPop 1.2s ease-out forwards;
+    opacity: 0;
+}
+@keyframes textPop {
+    0% { transform: translateY(30px) scale(0.95); opacity: 0; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.cta-btn {
+    animation: fadeUpBtn 1.4s ease-out forwards;
+    opacity: 0;
+}
+@keyframes fadeUpBtn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ======================================================
+   PRODUCT CARD HOVER (Scale + Shadow)
+====================================================== */
+.product-card {
+    transition: 0.35s ease;
+}
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 22px rgba(247,200,115,0.25);
+}
+
+/* Card Image Hover Pop */
+.product-card img {
+    transition: 0.35s ease;
+}
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Copy Button Glow */
+.copy-btn:hover {
+    box-shadow: 0 0 12px rgba(247,200,115,0.6);
+}
+
+/* ======================================================
+   FILTER BUTTON ANIMATION
+====================================================== */
+.product-tabs button {
+    transition: 0.3s ease;
+}
+.product-tabs button.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(247,200,115,0.4);
+}
+
+/* Fade & Scale animation for filtering */
+.product-card.hide {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+.product-card.show {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.4s ease;
+}
+
+/* ======================================================
+   CTA BUTTON GLOW
+====================================================== */
+.cta-btn, .sample-btn {
+    transition: 0.3s ease-in-out;
+}
+.cta-btn:hover, .sample-btn:hover {
+    box-shadow: 0 0 15px rgba(247,200,115,0.5);
+    transform: translateY(-3px);
+}
+
+/* ======================================================
+   FOOTER FADE CASCADE
+====================================================== */
+.footer-content > div {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease-out;
+}
+.footer-content > div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ .btn {
+            padding: 10px 20px;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s ease;
+        }
+
+    .btn:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+     <img src="C:\Users\Vivek\rajratan\WhatsApp_Image_2025-11-25_at_9.49.12_PM-removebg-preview.png" alt="logo">  <!-- your logo here -->
+
+    <nav class="nav-links">
+        <span class="close-nav">&times;</span>
+        <a href="home.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="services.html">Services</a>
+        <a href="products.html" id="active">Products</a>
+              <!-- for blogs we have to paste link of main landing page of your blogs-->
+         <a href="">Blogs</a>
+        <button class="btn" onclick="window.location.href='get-sample.html'">
+    Get a Sample
+</button>
+
+    </nav>
+
+    <div class="hamburger">
+        ☰
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero-product">
+    
+  <div class="hero-content">
+    <h1>TURNING WASTE <BR>INTO WONDER</h1>
+    <a href="#" class="cta-btn" id="viewProductsBtn">EXPLORE PRODUCT RANGE</a>
+  </div>
+</section>
+
+
+<section class="pac-section">
+    <div class="pac-image">
+        <img src="C:\Users\Vivek\rajaratan industries\public\images\Screenshot 2025-12-07 205606.png" alt="PAC Board Image">
+    </div>
+
+    <div class="pac-content">
+        <h2>PAC – Plastic Aluminum Composite</h2>
+        <p>PAC (Plastic Aluminum Composite) is a next-generation eco-friendly construction and fabrication material 
+        designed to replace harmful and short-life traditional materials such as plywood, WPC, and plastic sheets. It 
+        is manufactured using a combination of industrial and municipal grade single-use plastic waste reinforced with 
+        fibers and cross-linked polymers (XLP), processed with specialized technology. This makes PAC not only 
+        sustainable but also extremely durable and suitable for both indoor and outdoor applications.</p>
+
+        <p>What makes PAC truly unique is its strong environmental contribution. It utilizes waste plastics, converts 
+        them into highly useful composite boards, and helps prevent plastic pollution. PAC boards deliver outstanding 
+        performance in harsh conditions. They are completely water-proof and do not absorb moisture, ensuring that they 
+        do not swell, crack, or deform over time. Their fire-resistant properties add an extra layer of safety, making 
+        them ideal for residential, commercial, and industrial environments.</p>
+
+        <p>These boards can be cut, drilled, nailed, and screwed using standard woodworking tools and skills. They 
+        require no additional training or complex techniques, making them an easy and reliable replacement for 
+        conventional wood-based materials.</p>
+
+        <p>PAC is highly versatile in application. It is widely used for wall paneling, partitions, modular kitchens, 
+        office and home furniture, doors, temporary housing structures, modular toilets, and security cabins. It also 
+        plays a major role in urban infrastructure products like planters, railings, waste bins, tree guards, rainwater 
+        recharge soak pits, septic tanks, and storage pallets. Its wide usability reflects the material’s exceptional 
+        structural and environmental performance.</p>
+
+        <p>By being recyclable, PAC contributes to a circular economy. After long-term use, the boards can again be 
+        processed and turned into new products, reducing waste generation further. In comparison to plywood and other 
+        conventional products, PAC eliminates issues like termite damage, rotting, and delamination — making it a safer 
+        and more reliable choice for sustainable construction and furniture manufacturing.</p>
+
+        <p>In summary, PAC is a revolutionary building and industrial material — strong, long-lasting, recyclable, 
+        waterproof, fire-resistant, and environmentally responsible. It reduces dependency on wood, reduces waste, and 
+        supports a cleaner and greener future. Whether for modern interiors, infrastructure development, or outdoor 
+        structures, PAC delivers performance, safety, and sustainability — all in one product.</p>
+    </div>
+</section>
+
+
+
+
+<section class="products-section" id="products-section">
+
+  <section class="pac-info-section">
+    <h2>Discover PAC – The Future of Smart Construction</h2>
+    <p>
+        PAC (Polymer Aluminum Composite) products are engineered to simplify construction without
+        compromising strength or aesthetics. From interior designs to robust outdoor structures, PAC
+        delivers superior resistance to water, fire, rot, and termites — far outperforming traditional
+        wood and concrete materials. Built to last longer with minimal maintenance, PAC supports a
+        greener and more sustainable future.
+    </p>
+    <p>
+        Our product range includes versatile panels, bricks, and blocks designed to suit homes,
+        commercial spaces, and industrial projects. Whether you’re building walls, partitions,
+        elevations, or decorative elements, PAC ensures crisp finish, clean installation, and
+        long-term durability in every application.
+    </p>
+    <p>
+        To help you experience the quality first-hand, you can request a free sample of any one PAC
+        product from our catalog. Just explore the categories below and choose the product that fits
+        your vision.
+    </p>
+    
+     <button class="btn" onclick="window.location.href='get-sample.html'">
+    Get a Sample
+</button>
+</section>
+
+
+  <!-- Category Tabs -->
+  <div class="product-tabs">
+    <button class="active" onclick="filterProducts('indoor')">Indoor</button>
+    <button onclick="filterProducts('outdoor')">Outdoor</button>
+    <button onclick="filterProducts('panels')">Panels & Bricks</button>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\black chair.png" alt="Product 1">
+      <h3 class="product-name">Product 1</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\box.png" alt="Product 1">
+      <h3 class="product-name">Product 2</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\dustbin.png" alt="Product 1">
+      <h3 class="product-name">Product 3</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\harvesting.png" alt="Product 1">
+      <h3 class="product-name">Product 4</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\lavotary.png" alt="Product 1">
+      <h3 class="product-name">Product 5</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\planter bench.png" alt="Product 1">
+      <h3 class="product-name">Product 6</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\planter compound.png" alt="Product 1">
+      <h3 class="product-name">Product 7</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\planter.png" alt="Product 1">
+      <h3 class="product-name">Product 8</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\semicircle planter.png" alt="Product 1">
+      <h3 class="product-name">Product 9</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\square planter.png" alt="Product 1">
+      <h3 class="product-name">Product 10</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\temp house.png" alt="Product 1">
+      <h3 class="product-name">Product 11</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\toilet.png" alt="Product 1">
+      <h3 class="product-name">Product 12</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    <div class="product-card" data-category="outdoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\watchmen house.png" alt="Product 1">
+      <h3 class="product-name">Product 13</h3>
+
+      <ul class="details">
+        <li>Height: 250mm</li>
+        <li>Width: 150mm</li>
+        <li>Thickness: 12mm</li>
+        <li>Rate: ₹45 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+
+
+    <!-- Product 2 -->
+    <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\case.png" alt="Product 2">
+      <h3 class="product-name">Product 14</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+      <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\furniture.png" alt="Product 2">
+      <h3 class="product-name">Product 15</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+      <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\large bench.png" alt="Product 2">
+      <h3 class="product-name">Product 16</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+      <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\office furniture.png" alt="Product 2">
+      <h3 class="product-name">Product 17</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+      <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\partition room.png" alt="Product 2">
+      <h3 class="product-name">Product 18</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+      <div class="product-card" data-category="indoor">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\small bench.png" alt="Product 2">
+      <h3 class="product-name">Product 19</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+
+
+
+
+  
+
+  <div class="product-card" data-category="panels">
+      <img src='C:\Users\Vivek\rajaratan industries\public\images\brick.png' alt="Product 2">
+      <h3 class="product-name">Product 20</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+  <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\brick1.png" alt="Product 2">
+      <h3 class="product-name">Product 21</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\door panel.png" alt="Product 2">
+      <h3 class="product-name">Product 22</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\door.png" alt="Product 2">
+      <h3 class="product-name">Product 23</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\ladder 2.png" alt="Product 2">
+      <h3 class="product-name">Product 24</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\ladder.png" alt="Product 2">
+      <h3 class="product-name">Product 25</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\pac tile.png" alt="Product 2">
+      <h3 class="product-name">Product 26</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\panel1.png" alt="Product 2">
+      <h3 class="product-name">Product 27</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\panel2.png" alt="Product 2">
+      <h3 class="product-name">Product 28</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\pavement.png" alt="Product 2">
+      <h3 class="product-name">Product 29</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+     <div class="product-card" data-category="panels">
+      <img src="C:\Users\Vivek\rajaratan industries\public\images\wall panel.png" alt="Product 2">
+      <h3 class="product-name">Product 30</h3>
+
+      <ul class="details">
+        <li>Height: 300mm</li>
+        <li>Width: 200mm</li>
+        <li>Thickness: 15mm</li>
+        <li>Rate: ₹52 / piece</li>
+      </ul>
+
+      <button class="copy-btn" onclick="copyName(this)">Copy Name</button>
+    </div>
+    
+
+
+      <!-- Repeat others (Total 30) -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer fade-up">
+
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="c:\Users\Vivek\Downloads\Rajratan Logo High Pixel (6).png" alt="Rajratan Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-center">
+            <h3>ADDRESS</h3>
+            <p>1st Floor 123-124, Shastri Market,<br>
+            Shastri Market, Indore, Madhya Pradesh 452007</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>CONTACT</h3>
+            <p><a href="mailto:response@rajratan.in">response@rajratan.in</a><br>
+            <a href="mailto:info@rajratan.in">info@rajratan.in</a></p>
+            <p><a href="tel:+919685927927">+91 9685 927 927</a><br>
+            <a href="tel:+919893027744">+91 98930 27744</a></p>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <a href="#"><img src="C:\Users\Vivek\rajratan\meta.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\x.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\Screenshot 2025-11-26 160452.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\youtube.png" alt=""></a>
+    </div>
+
+</footer>
+
+<!-- Transparent Overlay -->
+<div id="chat-wave-overlay"></div>
+
+<!-- Floating Chat Icon -->
+<div id="chat-launcher" onclick="openChatWithWave()">💬</div>
+
+<script>
+function revealScroll(){
+    document.querySelectorAll(".fade-up").forEach(el=>{
+        if(el.getBoundingClientRect().top < window.innerHeight - 70){
+            el.classList.add("visible");
+        }
+    });
+}
+window.addEventListener("scroll", revealScroll);
+revealScroll();
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+
+
+
+  function openChatWithWave() {
+    const overlay = document.getElementById("chat-wave-overlay");
+    const icon = document.getElementById("chat-launcher");
+
+    const rect = icon.getBoundingClientRect();
+
+    const wave = document.createElement("div");
+    wave.classList.add("wave-circle");
+    wave.style.left = `${rect.left + rect.width / 2}px`;
+    wave.style.top = `${rect.top + rect.height / 2}px`;
+    overlay.appendChild(wave);
+
+    const size = Math.max(window.innerWidth, window.innerHeight) * 2;
+
+    setTimeout(() => {
+        wave.style.width = `${size}px`;
+        wave.style.height = `${size}px`;
+    }, 10);
+
+    setTimeout(() => {
+        window.location.href = "C:/Users/Vivek/rajaratan industries/rajaratan-chatbot/frontend/index.html"; // ✨ Chat page path here
+    }, 600);
+}
+
+
+function copyName(btn) {
+  const name = btn.parentElement.querySelector('.product-name').innerText;
+  navigator.clipboard.writeText(name);
+  btn.innerText = 'Copied!';
+  setTimeout(() => (btn.innerText = 'Copy Name'), 1500);
+}
+
+function filterProducts(category) {
+  document.querySelectorAll('.product-tabs button')
+    .forEach(btn => btn.classList.remove('active'));
+
+  event.target.classList.add('active');
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.style.display = card.dataset.category === category ? 'block' : 'none';
+  });
+}
+
+/* Smooth Scroll Reveal for All Sections */
+function revealSections() {
+    document.querySelectorAll("section").forEach(sec => {
+        if (sec.getBoundingClientRect().top < window.innerHeight - 80) {
+            sec.classList.add("visible");
+        }
+    });
+
+    /* Footer Cascade */
+    document.querySelectorAll(".footer-content > div").forEach((el, i) => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+            setTimeout(() => el.classList.add("visible"), i * 150);
+        }
+    });
+}
+
+window.addEventListener("scroll", revealSections);
+revealSections();
+
+/* Filter Animation */
+function filterProducts(category) {
+    document.querySelectorAll(".product-tabs button")
+      .forEach(btn => btn.classList.remove("active"));
+
+    event.target.classList.add("active");
+
+    document.querySelectorAll(".product-card").forEach(card => {
+        if (card.dataset.category === category) {
+            card.classList.remove("hide");
+            card.classList.add("show");
+            card.style.display = "block";
+        } else {
+            card.classList.add("hide");
+            setTimeout(() => card.style.display = "none", 300);
+        }
+    });
+}
+
+const closeNav = document.querySelector(".close-nav");
+
+closeNav.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+
+
+
+document.getElementById("viewProductsBtn").addEventListener("click", function() {
+    document.getElementById("products-section").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+</script>
+
+</body>
+</html>

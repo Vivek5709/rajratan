@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Rajratan Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Canonical Link -->
+<link rel="canonical" href="https://rajratan.in/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<!-- Search Engine Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- Author -->
+<meta name="author" content="Rajratan Group">
+
+<!-- About Us Page SEO -->
+<title>About Rajratan Group | Leaders in Waste Recycling & Green Innovation</title>
+
+<meta name="description" content="Learn about Rajratan Group's journey from 1973 to becoming a leader in waste recycling, green technology, and sustainable manufacturing in India.">
+
+<meta name="keywords" content="About Rajratan, Rajratan Group history, waste recycling company India, sustainable technology, environmental solutions">
+
+<meta property="og:title" content="About Rajratan Group | Waste Recycling Innovators">
+<meta property="og:description" content="Discover the legacy, leadership, and vision behind Rajratan Group’s pioneering work in sustainable and circular manufacturing.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rajratan.in/about">
+<meta property="og:image" content="https://rajratan.in/assets/about-og.jpg">
+
+
+
+<style>
+:root {
+    --navy: #0a0f2d;
+    --white: #ffffff;
+    --gold: #f7c873;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+body { background: var(--navy); color: var(--white); overflow-x: hidden;}
+
+/* HEADER */
+header {
+    width: 100%; padding: 20px 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--navy); position: sticky; top: 0; z-index: 100;
+     border-bottom:1px solid #f7c873;
+}
+header img { height: 50px; }
+header .btn {
+    padding: 10px 20px;
+    background: transparent; color: var(--gold);
+    border: 2px solid var(--gold); border-radius: 6px;
+    cursor: pointer; transition: .3s;
+}
+header .btn:hover { background: var(--gold); color: var(--navy); }
+
+/* HERO / BANNER */
+.about-hero {
+    height: 300px;
+    background: url("images/about-banner.png") center/cover no-repeat;
+    display: flex; justify-content: center; align-items: center;
+}
+.about-hero h1 {
+    font-size: 48px;
+    color: var(--gold);
+}
+
+/* ABOUT CONTENT */
+.about-section {
+    padding: 80px 12%;
+}
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.about-section p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+.about-links a {
+    display: block;
+    margin-top: 10px;
+    color: var(--gold);
+    text-decoration: none;
+}
+.about-links a:hover { text-decoration: underline; }
+
+/* FOOTER */
+.footer {
+    background: var(--white);
+    padding: 60px 10%;
+    color: var(--white);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 150px;
+}
+
+.footer h3 {
+    color: var(--gold);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    font-size: 15px;
+    color: var(--navy);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 26px;
+     transition: 0.3s ease;
+    filter: brightness(0) saturate(100%) 
+            invert(8%) sepia(20%) saturate(2300%) 
+            hue-rotate(215deg) brightness(90%) contrast(95%);
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+     filter: brightness(0) saturate(100%) 
+            invert(75%) sepia(45%) saturate(550%) 
+            hue-rotate(358deg) brightness(100%) contrast(95%);
+}
+
+/* Fade Animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s ease-out;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    header { padding: 15px 20px; }
+    .about-hero h1 { font-size: 32px; }
+    .about-section { padding: 60px 20px; }
+    .footer-content { text-align: center; }
+}
+
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .logos img {
+        width: 80%;
+        height: auto;
+    }
+
+    .testimonials {
+        padding: 60px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .logos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        padding: 12px 18px;
+    }
+
+    header img {
+        height: 35px;
+    }
+}
+
+/* NAVIGATION */
+header .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header .nav-links a:hover {
+    color: var(--gold);
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background: var(--navy);
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 25px;
+        transition: 0.4s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+        color: var(--gold);
+    }
+
+    header .btn {
+        width: 150px;
+        text-align: center;
+    }
+}
+
+#active{
+    color: #f7c873;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+    }
+
+    .footer-logo {
+        height: 70px;
+    }
+
+    .footer p, .footer a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 8%;
+    }
+
+    .footer-logo {
+        height: 60px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p, .footer a {
+        font-size: 13px;
+    }
+
+    .footer-social img {
+        width: 22px;
+    }
+}
+
+
+  /* Transparent fullscreen overlay */
+#chat-wave-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  pointer-events: none;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+/* Expanding golden wave */
+.wave-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.65s ease-out, height 0.65s ease-out;
+  opacity: 1;
+  background: radial-gradient(circle,
+    #ffe29f 0%,
+    #f7c873 35%,
+    #d7a645 70%,
+    #b8860b 100%
+  );
+  box-shadow: 0 0 40px rgba(247, 200, 115, 0.8),
+              0 0 80px rgba(184, 134, 11, 0.6);
+}
+
+
+/* Floating Chat Icon */
+#chat-launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #f7c873;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: 0.2s ease-in-out;
+}
+
+#chat-launcher:hover {
+  transform: scale(1.1);
+}
+
+/* Close (X) button inside mobile menu */
+.close-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: var(--gold);
+    cursor: pointer;
+    display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+    .close-nav {
+        display: block;
+    }
+}
+
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: url("C:/Users/Vivek/rajaratan industries/public/images/Screenshot 2025-12-11 185711.png") center/cover no-repeat;
+    animation: heroZoom 6s ease-in-out forwards;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,15,45,0.7), rgba(10,15,45,0.4), rgba(10,15,45,0.9));
+    opacity: 0;
+    animation: fadeIn 2s ease forwards 0.5s;
+}
+
+.about-hero-title {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeIn 1.8s ease forwards 1s;
+}
+
+/* Zoom animation */
+@keyframes heroZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.07); }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about-hero {
+        height: 55vh;
+    }
+    .about-hero-title {
+        font-size: 2rem;
+        left: 5%;
+        bottom: 12%;
+    }
+}
+
+
+.history-section {
+  background: #f5f7fa;
+  padding: 80px 10%;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a0f2d;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline {
+  border-left: 4px solid #0a0f2d;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #f7c873;
+  border: 4px solid #0a0f2d;
+  border-radius: 50%;
+  position: absolute;
+  left: -43px;
+  top: 5px;
+}
+
+.timeline-item h3 {
+  font-size: 1.7rem;
+  color: #0a0f2d;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+  max-width: 900px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .history-section {
+    padding: 50px 5%;
+  }
+
+  .history-title {
+    font-size: 2rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-item p {
+    font-size: 1rem;
+  }
+}
+
+/* Wrapper section spacing */
+.group-companies, 
+.key-personnel {
+    padding: 50px 10%;
+    background: #ffffff;
+}
+
+/* Section titles */
+.group-companies h2,
+.key-personnel h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0a0f2d;
+    margin-bottom: 25px;
+    border-left: 6px solid #f7c873;
+    padding-left: 12px;
+}
+
+/* Subheadings */
+.group-companies h3,
+.key-personnel h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0a0f2d;
+    margin-top: 25px;
+}
+
+/* Paragraph styling */
+.group-companies p,
+.key-personnel p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-top: 8px;
+    max-width: 900px;
+}
+
+/* Light divider between items */
+.group-companies h3:not(:first-of-type),
+.key-personnel h3:not(:first-of-type) {
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .group-companies, 
+    .key-personnel {
+        padding: 40px 6%;
+    }
+
+    .group-companies h2,
+    .key-personnel h2 {
+        font-size: 1.8rem;
+    }
+
+    .group-companies h3,
+    .key-personnel h3 {
+        font-size: 1.2rem;
+    }
+
+    .group-companies p,
+    .key-personnel p {
+        font-size: 0.95rem;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+     <img src="C:\Users\Vivek\rajratan\WhatsApp_Image_2025-11-25_at_9.49.12_PM-removebg-preview.png" alt="logo">  <!-- your logo here -->
+
+    <nav class="nav-links">
+        <span class="close-nav">&times;</span>
+
+        <a href="home.html">Home</a>
+        <a href="about.html" id="active">About us</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+              <!-- for blogs we have to paste link of main landing page of your blogs-->
+         <a href="">Blogs</a>
+        <button class="btn" onclick="window.location.href='get-sample.html'">
+    Get a Sample
+</button>
+
+    </nav>
+
+    <div class="hamburger">
+        ☰
+    </div>
+</header>
+
+<section class="about-hero" data-aos="fade-up">
+    <div class="about-hero-overlay"></div>
+    <h1 class="about-hero-title">About Rajratan Group</h1>
+</section>
+
+
+</section>
+
+<section class="about-section fade-up">
+
+
+    <p>Rajratan Group was established with an aim to preserve Nature & Environment and work exclusively on Waste & Water Management for Environment & Sustainable Development. With ISO 9001-2000 Certification, Rajratan Group is the pioneer in developing newer technologies and Eco-Friendly Green Products to minimize all kinds of waste and ensure a cleaner environment around your home, office or society. We provide services for waste and water management in the Municipal, Industrial and Agro sectors. Authorized by Pollution Control Board, we are Providing waste minimization service to Government as well as Private manufacturing unit around Nation. We at “Rajratan Group” serve many Organisations in the Private and Public sector with our Advance Knowledge and Experience in the field of Municipal Solid Waste, Currency Waste, Hazardous Waste and Waste Water Management, to serve the society.</p>
+
+    <h2 class="gold fade-up" style="margin-top:40px">Quality and Environment Policy</h2>
+    <p>We "Rajratan Group", are committed towards Total Customer Satisfaction through implementation of management system for continual improvement, preservation of environment and natural resources. Idea is to provide complete waste management solution and develop Eco-friendly products. We shall endeavour to motivate our employees, suppliers and business associates to work in an integrated management system to serve the Nation.</p>
+
+   
+
+</section>
+
+
+<section class="history-section">
+  <h2 class="history-title">Our History</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>1973 — The Beginning of a Vision</h3>
+      <p>
+        The origins of Rajratan Group trace back to 1973, when Late Shri Ratanlalji Deepchandji Jain laid the foundation 
+        of what would become a pioneer in sustainable manufacturing. With no formal education but immense determination 
+        and wisdom, he established Ashok Plastic Industries in Rajgarh, MP. His early work focused on converting waste 
+        polybags into agricultural pipes — a revolutionary idea for its time. This innovation planted the seeds for a 
+        company that would later redefine waste management and environmental responsibility in India.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>1994 — Expanding Into Modern Irrigation Systems</h3>
+      <p>
+        In 1994, under the leadership of Shri Ashok Kumar Jain, the group entered a new era with the establishment of 
+        Rajratan Irrigation Pvt. Ltd. The company introduced modern, cost-effective irrigation solutions including PVC 
+        pipes and sprinkler systems, significantly improving water conservation practices for farmers and strengthening 
+        the group’s long-term focus on environmental sustainability.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2001 — Birth of the “Guardian of Nature” Concept</h3>
+      <p>
+        With industrial and domestic waste rapidly increasing, Rajratan took a bold step in 2001 by launching 
+        Rajratan Technique & Technology Pvt. Ltd. The visionary concept of “Guardian of Nature” was introduced, focusing 
+        on clean-tech solutions capable of converting multilayer plastics, soiled currency, hazardous ink waste, and 
+        misprinted packaging into usable resources. This marked the group's transition into a clean-tech innovation leader.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2002 — Beginning of Industrial Waste Consultancy</h3>
+      <p>
+        Rajratan Concept was formed in 2002 to help industries adopt efficient and structured waste minimization 
+        strategies. It provided end-to-end consultancy, operational systems, and practical implementation frameworks. 
+        This period also introduced the company’s 7R Philosophy — Research, Renovate, Recharge, Reduce, Reuse, Recycle, Recover.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2005 — Strengthening the Green Movement</h3>
+      <p>
+        Rajratan Green Environment Concept (RGEC) was established in 2005 to manage complex waste streams such as 
+        packaging waste, electronic waste, and used tyres. By developing structured systems for waste collection, 
+        segregation, and conversion, RGEC became a trusted partner to industries across multiple states.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2006 — Advancing Municipal & Agro Waste Recycling</h3>
+      <p>
+        In 2006, Rajratan Recycling Industries was launched to focus on municipal and agricultural waste. The company 
+        developed eco-friendly products such as pellets, composite materials, and plastic-to-fiber solutions, along with 
+        technology for on-site recycling of hazardous ETP sludge. This strengthened the group’s circular manufacturing approach.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2023 — A New Era of Advanced Manufacturing</h3>
+      <p>
+        Rajratan Green Products inaugurated a state-of-the-art manufacturing unit at Smart Industrial Park (SIP), Pithampur. 
+        This ultra-modern facility boosted production capacity by four times and enhanced automation, symbolizing the 
+        company’s transformation into a powerful force in sustainable manufacturing.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2025 — Breakthrough in Pharmaceutical Waste Recycling</h3>
+      <p>
+        In 2025, Rajratan introduced an advanced recycling apparatus for pharmaceutical waste, integrating magnetic 
+        separation and zero-carbon emission processes. This innovation highlights the company’s ongoing mission to turn 
+        complex waste streams into valuable, eco-friendly resources.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="group-companies">
+    <h2>Group Companies & Business Verticals</h2>
+
+    <h3>Rajratan Industries Private Limited</h3>
+    <p>
+        This company manufactures and supplies pallets for cement bricks and blocks, along with 
+        shuttering boards used in the construction industry. It provides durable and sustainable 
+        alternatives to traditional materials.
+    </p>
+
+    <h3>Rajratan Technique & Technology Private Limited</h3>
+    <p>
+        This division offers dunnage pallets for warehousing, ready-made septic tanks, soak pits, 
+        and a wide range of urban green infrastructure such as bins, benches, and planters. It 
+        supports warehousing, storage, and municipal corporations.
+    </p>
+
+    <h3>Rajratan Marketing</h3>
+    <p>
+        Focused on retail and consumer solutions, this unit provides doors, windows, frames, 
+        furniture, partitions, flight cases, and sound systems. It serves home, commercial, and 
+        industrial customers with durable eco-friendly products.
+    </p>
+
+    <h3>Rajratan Concept</h3>
+    <p>
+        Specializing in waste minimization services, this division helps industries establish and 
+        operate structured waste handling systems. It supports FMCG sectors with sustainable waste 
+        reduction processes.
+    </p>
+
+    <h3>Rajratan Green Products</h3>
+    <p>
+        A technology-driven unit that develops and implements recycling technologies. It converts 
+        industrial packaging waste into reusable green products, contributing heavily to circular 
+        manufacturing in the packaging industry.
+    </p>
+
+    <h3>Rajratan Recycling Services</h3>
+    <p>
+        This division focuses on recovery and recycling of ink waste and pharmaceutical packaging 
+        waste. It provides advanced recycling solutions for printing press and pharmaceutical 
+        packaging industries.
+    </p>
+</section>
+
+
+
+<section class="key-personnel">
+    <h2>Key Personnel</h2>
+
+    <h3>Shri Ashok Kumar Jain – Chairman & Founder</h3>
+    <p>
+        A visionary entrepreneur and law postgraduate who founded Rajratan Group. He guides the 
+        organization’s innovation, research, administration, operations, and finance. His leadership 
+        continues to shape the group’s mission of sustainability and technological advancement.
+    </p>
+
+    <h3>Mr. Ashay Jain – Director, Operations</h3>
+    <p>
+        A graduate from De Montfort University, Leicester (UK). Since joining in 2003, he has 
+        strengthened the recycling ecosystem and introduced green alternatives to traditional 
+        materials. He manages manufacturing, production, and operational functions across all units.
+    </p>
+
+    <h3>Mr. Ankit Jain – Director, Sales & Promotion</h3>
+    <p>
+        Joined the group in 2007 and leads national sales, marketing, branding, and promotional 
+        strategies. He oversees client acquisition, partnerships, events, and plays a major role in 
+        strengthening the company’s industrial market presence across India.
+    </p>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer fade-up">
+
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="c:\Users\Vivek\Downloads\Rajratan Logo High Pixel (6).png" alt="Rajratan Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-center">
+            <h3>ADDRESS</h3>
+            <p>1st Floor 123-124, Shastri Market,<br>
+            Shastri Market, Indore, Madhya Pradesh 452007</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>CONTACT</h3>
+            <p><a href="mailto:response@rajratan.in">response@rajratan.in</a><br>
+            <a href="mailto:info@rajratan.in">info@rajratan.in</a></p>
+            <p><a href="tel:+919685927927">+91 9685 927 927</a><br>
+            <a href="tel:+919893027744">+91 98930 27744</a></p>
+        </div>
+    </div>
+
+     <div class="footer-social">
+        <a href="#"><img src="C:\Users\Vivek\rajratan\meta.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\x.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\Screenshot 2025-11-26 160452.png" alt=""></a>
+        <a href="#"><img src="C:\Users\Vivek\rajratan\youtube.png" alt=""></a>
+    </div>
+
+</footer>
+
+<!-- Transparent Overlay -->
+<div id="chat-wave-overlay"></div>
+
+<!-- Floating Chat Icon -->
+<div id="chat-launcher" onclick="openChatWithWave()">💬</div>
+
+<script>
+function revealScroll(){
+    document.querySelectorAll(".fade-up").forEach(el=>{
+        if(el.getBoundingClientRect().top < window.innerHeight - 70){
+            el.classList.add("visible");
+        }
+    });
+}
+window.addEventListener("scroll", revealScroll);
+revealScroll();
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+
+
+
+  function openChatWithWave() {
+    const overlay = document.getElementById("chat-wave-overlay");
+    const icon = document.getElementById("chat-launcher");
+
+    const rect = icon.getBoundingClientRect();
+
+    const wave = document.createElement("div");
+    wave.classList.add("wave-circle");
+    wave.style.left = `${rect.left + rect.width / 2}px`;
+    wave.style.top = `${rect.top + rect.height / 2}px`;
+    overlay.appendChild(wave);
+
+    const size = Math.max(window.innerWidth, window.innerHeight) * 2;
+
+    setTimeout(() => {
+        wave.style.width = `${size}px`;
+        wave.style.height = `${size}px`;
+    }, 10);
+
+    setTimeout(() => {
+        window.location.href = "C:/Users/Vivek/rajaratan industries/rajaratan-chatbot/frontend/index.html"; // ✨ Chat page path here
+    }, 600);
+}
+
+const closeNav = document.querySelector(".close-nav");
+
+closeNav.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+
+</script>
+
+</body>
+</html>

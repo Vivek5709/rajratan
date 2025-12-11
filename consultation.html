@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Consultation | Rajratan Group</title>
+<style>
+    :root {
+    --navy: #0a0f2d;
+    --gold: #f7c873;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--white);
+}
+
+.consultation-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f5f7fa;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--navy);
+}
+
+/* ❌ Cross Button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px;
+    color: var(--navy);
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    color: var(--gold);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--navy);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.consult-form .input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--navy);
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--navy);
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--navy);
+    color: var(--gold);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #10173f;
+}
+
+</style>
+</head>
+<body>
+
+<section class="consultation-section">
+    <div class="form-container">
+
+        <!-- Cross Button -->
+        <button class="close-btn" onclick="history.back()">✕</button>
+
+        <h2>Book a Consultation</h2>
+        <p class="subtitle">Schedule a call or meeting with our team</p>
+
+        <form class="consult-form">
+            
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label>Preferred Date</label>
+                <input type="date" required>
+            </div>
+
+            <div class="input-group">
+                <label>Preferred Time</label>
+                <input type="time" required>
+            </div>
+
+            <div class="input-group">
+                <label>Type of Meeting</label>
+                <select required>
+                    <option value="">Select option</option>
+                    <option>Phone Call</option>
+                    <option>Video Call</option>
+                    <option>In-Person Meeting</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Message (Optional)</label>
+                <textarea placeholder="Tell us your requirements"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Book Consultation</button>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

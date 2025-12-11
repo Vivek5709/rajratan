@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajratan AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">RAJRATAN AI</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Rajratan AI Assistant</h1>
+    <p>Ask anything about our Green Products & Circular Manufacturing</p>
+
+    <div class="chat-card">
+      <div class="chat-box" id="chat-box"></div>
+
+    <div class="chat-close" onclick="closeChat()">✖</div>
+
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Ask about PAC boards, recycling solutions…">
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © Rajratan Group • Smart Waste • Smart Infrastructure
+  </footer>
+
+
+  
+  <script src="chat.js"></script>
+</body>
+</html>
