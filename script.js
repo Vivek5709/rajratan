@@ -120,7 +120,7 @@ observer.observe(document.querySelector('.stats-strip'));
     }, 10);
 
     setTimeout(() => {
-        window.location.href = "C:/Users/Vivek/rajaratan industries/rajaratan-chatbot/frontend/index.html"; // ✨ Chat page path here
+        window.location.href = "frontend/index.html"; // ✨ Chat page path here
     }, 600);
 }
 
